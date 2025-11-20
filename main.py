@@ -19,7 +19,7 @@ for i in range(len(students)):
     # Count how many times this student's name appears
     repeat_count = students.count(name)
 
-    # ---- APPLY HALLWAY RULES ----
+    #  APPLY HALLWAY RULES
     if minutes <= 5:
         status = "OK"
     elif 6 <= minutes <= 10:
@@ -27,7 +27,7 @@ for i in range(len(students)):
     else:                      # minutes > 10
         status = "FLAGGED"
 
-    # ---- SPECIAL FLAG RULE (Logical operators) ----
+    # SPECIAL FLAG RULE
     if minutes > 10 or repeat_count > 1:
         status = "FLAGGED"
 
@@ -35,11 +35,10 @@ for i in range(len(students)):
     if repeat_count > 1:
         note = "(Duplicate name detected!)"
 
-    # ---------------------------------------
+ -
     # 5. PRINT THE REPORT LINE FOR STUDENT
-    # ---------------------------------------
+    
     print(f"Student: {name}")
     print(f"Minutes gone: {minutes}")
     print(f"Status: {status} {note}")
     print("------------------------")
- #Their st
