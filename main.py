@@ -13,9 +13,6 @@ for i in range(len(students)):
     name = students[i]
     minutes = minutes_gone[i]
 
-    # Optional note field
-    note = ""
-
     # Count how many times this student's name appears
     repeat_count = students.count(name)
 
