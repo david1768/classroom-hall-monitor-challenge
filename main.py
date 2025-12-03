@@ -21,10 +21,9 @@ for i in range(len(students)):
         status = "OK"
     elif 6 <= minutes <= 10:
         status = "WARNING"
-    else:                      # minutes > 10
+    else:                     
         status = "FLAGGED"
 
-    # SPECIAL FLAG RULE
     if minutes > 10 or repeat_count > 1:
         status = "FLAGGED"
 
